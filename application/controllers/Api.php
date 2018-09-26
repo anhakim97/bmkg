@@ -33,6 +33,16 @@
             }
             $this->response($produk, 200);
         }
+        public function rataRata_get() {
+            $id = $this->get('id');
+            if ($id == '') {
+                $produk = $this->m_log->rataRata();
+            } else {
+                
+            }
+            $this->response($produk, 200);
+        }
+        
 
 
     }
